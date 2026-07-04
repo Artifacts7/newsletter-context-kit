@@ -8,12 +8,18 @@ Most people bounce off AI writing tools because of the cold start: they run the 
 
 ## Install (Claude Code)
 
+It's a Claude Code plugin — two commands, run them **one at a time**:
+
 ```
-/plugin marketplace add Artifacts7/context-kit
+/plugin marketplace add https://github.com/Artifacts7/context-kit.git
+```
+```
 /plugin install context-kit@context-kit
 ```
 
-Skills then load namespaced, e.g. `/context-kit:onboard`, `/context-kit:brainstorm`.
+The first adds this repo as a marketplace; the second installs the plugin. Skills then load namespaced, e.g. `/context-kit:start`, `/context-kit:brainstorm`.
+
+> Use the full `https://…​.git` URL as shown — the `owner/repo` shorthand isn't accepted for `marketplace add`.
 
 ## Quick start
 
