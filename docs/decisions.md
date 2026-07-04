@@ -4,6 +4,17 @@ _ADR-lite. Newest first. Each entry: what we decided, why, and what would revers
 
 ## 2026-06-28 — Founding decisions
 
+### D27 — v0.2 cold-user defaults: 25-issue default · newsletter-language · expectations-first
+Three refinements from prepping the real cold-run:
+- **(a) Default to the 25 most recent issues**; check archive size and *ask* before pulling the full archive, warning it's noticeably more tokens/time. Recency is the strongest signal for voice/identity (Q4) and it keeps first runs cheap. (`extract-corpus` + `start`)
+- **(b) Language-match:** if the newsletter isn't in English, conduct the whole conversation **and write the deliverables** in the newsletter's language. (`start` + a Language footer on every skill)
+- **(c) Expectations-first:** `/start` opens by stating what it will do and the deliverables (Brief + Voice Profile), then gets a go-ahead before running.
+**Reverses if:** 25 proves too thin for good distillation (then raise the default) or writers prefer English meta-docs regardless of newsletter language.
+
+### D26 — A single guided entry point (`/start`) that walks the whole setup
+The skills were separate with no orchestrator, and step-1 "describe" had no command — a cold user couldn't just "begin." Added **`/start`**: one skill that drives Phase A → Milestone 1 → Milestone 2 in order, conducts the describe Q&A inline (closing that gap), and pauses at the human gates (describe · reconcile · brief-confirm · calibration). The individual skills remain for targeted/repeat use. Total: **13 skills**.
+**Reverses if:** the orchestrator and the standalone skills drift out of sync and become a maintenance burden.
+
 ### D25 — Packaged as a Claude Code plugin; repo root is the plugin; Artifacts dogfood removed
 Distributed as a **Claude Code plugin** (`.claude-plugin/plugin.json` + `marketplace.json` at the repo root, source `.`) so users `/plugin marketplace add <repo>` then `/plugin install`. Skills load namespaced (`/context-kit:*`). Mechanics: tools are **bundled inside the skill that uses them** and referenced via `${CLAUDE_SKILL_DIR}` (plain relative paths don't resolve in skill content); each SKILL.md is **self-contained** (method docs are dev reference, not runtime deps); generated context lands in the user's **`./newsletter-context/`** (defined convention); a **Stop hook** nudges `compound` at session end. `docs/` + `method/` stay in the repo as build-in-public (the plugin loader ignores them). The **Artifacts dogfood was removed** — a user's context is generated fresh, never shipped. Added a `pull-identity` skill so step 2 is a proper unit (→ 12 skills).
 **Reverses if:** Cowork needs a different package shape than a Claude Code plugin.
