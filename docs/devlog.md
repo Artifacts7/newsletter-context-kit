@@ -2,6 +2,13 @@
 
 _Dated progress. Raw material for build-in-public posts. Newest first._
 
+## 2026-06-30 — Day 4c: two on-ramps — paste-the-link as the easy path (D28)
+
+- Lorenzo noticed pasting the repo URL into Claude Code "just works" — the agent reads the SKILL.md playbooks directly, skipping the marketplace/trust ceremony. Big friction win, especially for non-technical/Cowork users.
+- Made it the **headline** in the README (paste-the-link first; plugin install second for durable use).
+- Made script refs **clone-robust**: SKILL.md notes the in-repo path fallback since `${CLAUDE_SKILL_DIR}` only resolves when installed.
+- Logged D28.
+
 ## 2026-06-30 — Day 4b: cold-user polish + a real entry point (D26, D27)
 
 - Prepping the real cold-run surfaced friction: no single "just begin" command, describe had no home, and full-archive fetch is token-heavy.

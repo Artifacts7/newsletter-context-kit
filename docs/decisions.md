@@ -4,6 +4,10 @@ _ADR-lite. Newest first. Each entry: what we decided, why, and what would revers
 
 ## 2026-06-28 — Founding decisions
 
+### D28 — Two install on-ramps; paste-the-link is the headline; scripts are clone-robust
+Lowest-friction entry: **paste the repo URL into Claude Code and say "set up my newsletter"** — the agent clones/reads the repo and follows the SKILL.md playbooks directly (no marketplace, no trust prompt, no install). The **plugin install** remains the durable path (namespaced commands, session-end hook, native `${CLAUDE_SKILL_DIR}`). README leads with paste-the-link, install second. Made script references clone-robust: SKILL.md notes that if running from a clone, use the script's in-repo path (e.g. `skills/extract-corpus/substack_fetch.py`) since `${CLAUDE_SKILL_DIR}` only resolves when installed.
+**Reverses if:** the paste path proves unreliable across surfaces and we standardize on install-only.
+
 ### D27 — v0.2 cold-user defaults: 25-issue default · newsletter-language · expectations-first
 Three refinements from prepping the real cold-run:
 - **(a) Default to the 25 most recent issues**; check archive size and *ask* before pulling the full archive, warning it's noticeably more tokens/time. Recency is the strongest signal for voice/identity (Q4) and it keeps first runs cheap. (`extract-corpus` + `start`)

@@ -19,6 +19,8 @@ python3 ${CLAUDE_SKILL_DIR}/substack_identity.py <publication-url> ./newsletter-
 Writes `newsletter-context/identity-stated.md` (name · tagline · about page · recent subjects).
 Works for vanilla and custom-domain Substacks; free newsletters only (v1).
 
+`${CLAUDE_SKILL_DIR}` resolves when installed as a plugin. **If running from a cloned repo** (the paste-the-link path), use the script's path in the clone instead — e.g. `skills/pull-identity/substack_identity.py`.
+
 ## After
 Read it back and note any gap vs. the writer's own description (`newsletter-context/seed-context.md`)
 — flag it for the `reconcile` step; don't resolve it now.

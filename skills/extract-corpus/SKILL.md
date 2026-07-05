@@ -42,6 +42,8 @@ python3 ${CLAUDE_SKILL_DIR}/substack_fetch.py <publication-url> ./newsletter-con
 ```
 Custom domains work the same (`https://www.example.com`). Everything lands in **`./newsletter-context/`** (the kit's convention).
 
+`${CLAUDE_SKILL_DIR}` resolves when installed as a plugin. **If running from a cloned repo** (the paste-the-link path), use the script's path in the clone instead — e.g. `skills/extract-corpus/substack_fetch.py`.
+
 ## Procedure (what the agent does)
 
 1. **Acquire.** Run the fetcher on the URL. It paginates the archive API and pulls

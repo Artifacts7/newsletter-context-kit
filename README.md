@@ -6,20 +6,24 @@ Most people bounce off AI writing tools because of the cold start: they run the 
 
 > v1 supports **free Substack** newsletters (vanilla or custom-domain).
 
-## Install (Claude Code)
+## Start (two ways)
 
-It's a Claude Code plugin — two commands, run them **one at a time**:
+**Easiest — paste the link.** Drop this into Claude Code and say *"set up my newsletter"*:
+```
+https://github.com/Artifacts7/context-kit
+```
+Claude reads the repo and walks you through it — no install, no setup. Perfect to try it.
 
+**For regular use — install the plugin** (namespaced commands + a session-end nudge). Two commands, run **one at a time**:
 ```
 /plugin marketplace add https://github.com/Artifacts7/context-kit.git
 ```
 ```
 /plugin install context-kit@context-kit
 ```
+> Use the full `https://….git` URL — the `owner/repo` shorthand isn't accepted for `marketplace add`.
 
-The first adds this repo as a marketplace; the second installs the plugin. Skills then load namespaced, e.g. `/context-kit:start`, `/context-kit:brainstorm`.
-
-> Use the full `https://…​.git` URL as shown — the `owner/repo` shorthand isn't accepted for `marketplace add`.
+Then invoke by name (`/context-kit:start`) — or just say what you want ("set up my newsletter", "help me brainstorm", "does this sound like me").
 
 ## Quick start
 
