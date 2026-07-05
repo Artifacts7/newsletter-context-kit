@@ -1,8 +1,20 @@
-# Context Kit
+# Newsletter Context Kit
 
-**Turn your newsletter's archive into living AI writing-context — then write with a partner that keeps your voice yours.**
+_by [Artifacts](https://artifactstech.substack.com)_
 
-Most people bounce off AI writing tools because of the cold start: they run the AI raw, get generic slop, and blame the tool. Context Kit fixes that. It reads your whole published archive to learn **what your newsletter is about** (a Brief) and **how you write** (a Voice Profile), then gives you pre-set skills that brainstorm, review, and polish — as a **guardrail, never a ghostwriter**. The writing stays yours.
+**A plugin to start using AI agents to help brainstorm, review, and write your newsletter.**
+
+Most people shy away from using Claude Code or similar AI agents because getting them to work isn't immediate. With newsletters, most people bounce off these tools because of the cold start: they run the AI raw, get generic slop, and blame the tool.
+
+But AI agents are far from the 'old' chatbots. Fed with the right context, they're valuable assistants.
+
+So the problem isn't in *using* the agents, but before: how the agents learn and digest the context of what you've been doing for years.
+
+Newsletter Context Kit tries to fix this by guiding you through the automated generation of the accurate context needed to get up and running with AI agents for your newsletter.
+
+With no manual uploads, and just by chatting with you, this Kit helps AI agents get up to speed with your newsletter — so they can read your previous publications and get what your newsletter is about (a **Brief**), how you write (a **Voice Profile**), and where you want to go next. And you also get pre-set skills that brainstorm, review, and polish, based on what you've been doing for years.
+
+So that, in the end, you get back the context your AI agents need to start helping with your newsletter.
 
 > v1 supports **free Substack** newsletters (vanilla or custom-domain).
 
