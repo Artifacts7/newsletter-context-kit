@@ -1,4 +1,4 @@
-![Newsletter Context Kit — teach your AI agents how you think and write. Built in public by Artifacts.](assets/Artifacts_context_kit.png)
+<p align="center"><img src="assets/Artifacts_context_kit.png" width="480" alt="Newsletter Context Kit — teach your AI agents how you think and write. Built in public by Artifacts."></p>
 
 # Newsletter Context Kit
 
