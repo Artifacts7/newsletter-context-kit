@@ -1,4 +1,4 @@
-![Newsletter Context Kit — teach your AI agents how you think and write. Built in public by Artifacts.](assets/banner.svg)
+![Newsletter Context Kit — teach your AI agents how you think and write. Built in public by Artifacts.](assets/Artifacts_context_kit.png)
 
 # Newsletter Context Kit
 
