@@ -1,0 +1,9 @@
+# A user's generated context — never committed to the kit itself
+newsletter-context/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
