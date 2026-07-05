@@ -34,5 +34,11 @@ rewrites — never reader-facing prose.
 `newsletter-context/voice-profile.md` — rules + examples + checklist + naturalness layer. The substrate for the
 guardrail/assist skills (step 9).
 
+## ▶ Milestone 2 complete — hand off (the "you're set up" moment)
+With the Brief + Voice Profile both done, the setup bulk is finished. Tell the writer clearly that their context is **ready to use**, and how to use it from now on:
+- **Where it lives:** this folder's `newsletter-context/` — `newsletter-brief.md` (source of truth), `voice-profile.md` (how you write), plus `seed-context.md` / `identity-stated.md` / `corpus/` (raw inputs).
+- **Every time you write:** open Claude Code **in this folder** (that's what points the skills at *your* context), then use **`brainstorm`** (angle) → *you draft* → **`editorial-review`** (substance) → **`polish`** (voice). 
+- **Keep it sharp:** **`compound`** at session end to fold in what you learned; **`prune`** occasionally to keep it lean; if the newsletter pivots, say so and we update the Brief first.
+
 ---
 _**Language:** if the newsletter isn't in English, converse with the writer — and write outputs — in the newsletter's language._

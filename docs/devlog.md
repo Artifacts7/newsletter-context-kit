@@ -2,6 +2,12 @@
 
 _Dated progress. Raw material for build-in-public posts. Newest first._
 
+## 2026-07-05 — Day 5: the "you're set up" completion handoff (D29)
+
+- Added the end-of-Milestone-2 UX: once the Brief + Voice Profile exist, the kit tells the writer the setup bulk is done and **how to use it from now on** — where it's saved (`newsletter-context/`), the daily workflow (open Claude Code in the folder → brainstorm → draft → review → polish), and maintenance (compound/prune, pivots edit the Brief first).
+- In `start` (full handoff) + `distill-voice` (concise, for direct-to-M2 users). Logged D29.
+- Also refined the launch LinkedIn post (kept in `~/projects/context-kit-launch-linkedin.md`, outside the repo).
+
 ## 2026-06-30 — Day 4c: two on-ramps — paste-the-link as the easy path (D28)
 
 - Lorenzo noticed pasting the repo URL into Claude Code "just works" — the agent reads the SKILL.md playbooks directly, skipping the marketplace/trust ceremony. Big friction win, especially for non-technical/Cowork users.

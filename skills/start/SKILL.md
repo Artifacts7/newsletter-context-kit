@@ -61,9 +61,30 @@ questions**, wait for the writer's answers, classify them. → `newsletter-conte
 **7 · Voice (optional now).** Ask if they want the Voice Profile now. If yes, invoke **`distill-voice`**
 and run the calibration. → `newsletter-context/voice-profile.md`. ✅ **Milestone 2.**
 
-## Then — the writing loop
-Point them to: **`brainstorm`** → *you draft* → **`editorial-review`** → **`polish`**, and
-**`compound`** at session end. The kit assists and guards; it never writes the piece for them (D21).
+## ▶ When Milestone 2 completes — hand off clearly (the "you're set up" moment)
+This is important UX: once the Brief + Voice Profile exist, tell the writer **the bulk is done, their context is ready, and how to use it from now on.** Present it warmly, roughly like this (in their language):
+
+> **You're set up 🎉 — the hard part's done, and it's a one-time thing.**
+>
+> **Where everything lives:** in this folder, under `newsletter-context/`:
+> - `newsletter-brief.md` — what your newsletter is about, how it's written, where it's going (your source of truth)
+> - `voice-profile.md` — how you write (used to protect your voice and catch AI-sounding text)
+> - `seed-context.md`, `identity-stated.md`, `corpus/` — the raw inputs behind them
+>
+> **Every time you want to write:** open Claude Code **in this folder** (select this folder/project) — that's what makes the skills use *your* context — then just say what you want, or use a skill:
+> - **`brainstorm`** — *"help me find an angle for the next issue"* (grounded in your Brief + past issues, flags overlap)
+> - *(you write the draft — the kit doesn't write for you)*
+> - **`editorial-review`** — *"does this draft work?"* (substance: is the argument there, is it on-brief)
+> - **`polish`** — *"does this sound like me?"* (voice check: flags AI texture, keeps your idiosyncrasies)
+>
+> **To keep it sharp over time:**
+> - **`compound`** — at the end of a session, *"update my context"* folds what you learned back into the Brief/Voice Profile
+> - **`prune`** — occasionally, *"clean up my context"* keeps it lean
+> - If the newsletter pivots, just say so — we update the Brief first.
+>
+> That's the whole loop: **brainstorm → you write → review → polish.** The context quietly improves each time.
+
+The kit assists and guards; it never writes the piece for them (D21).
 
 ## Rules
 - **One beat at a time.** Never skip the ⏸ gates (describe · reconcile · brief-confirm · calibration).

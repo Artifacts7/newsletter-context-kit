@@ -4,6 +4,10 @@ _ADR-lite. Newest first. Each entry: what we decided, why, and what would revers
 
 ## 2026-06-28 — Founding decisions
 
+### D29 — Completion handoff: the "you're set up" moment at Milestone 2
+When M2 completes (Brief + Voice Profile both exist), the kit explicitly tells the writer **the setup bulk is done and how to use the context from now on** — the daily UX. It covers: (1) **where everything is saved** (`newsletter-context/` + what each file is), (2) **how to work going forward** (open Claude Code *in the folder* each time you write — that's what points the skills at your context), (3) **the writing loop** (`brainstorm` → you draft → `editorial-review` → `polish`), and (4) **maintenance** (`compound` at session end, `prune` occasionally, pivots edit the Brief first). Added to `start` (full) and `distill-voice` (concise, for direct-to-M2 users). Makes the tool feel *complete* rather than just stopping.
+**Reverses if:** —
+
 ### D28 — Two install on-ramps; paste-the-link is the headline; scripts are clone-robust
 Lowest-friction entry: **paste the repo URL into Claude Code and say "set up my newsletter"** — the agent clones/reads the repo and follows the SKILL.md playbooks directly (no marketplace, no trust prompt, no install). The **plugin install** remains the durable path (namespaced commands, session-end hook, native `${CLAUDE_SKILL_DIR}`). README leads with paste-the-link, install second. Made script references clone-robust: SKILL.md notes that if running from a clone, use the script's in-repo path (e.g. `skills/extract-corpus/substack_fetch.py`) since `${CLAUDE_SKILL_DIR}` only resolves when installed.
 **Reverses if:** the paste path proves unreliable across surfaces and we standardize on install-only.
