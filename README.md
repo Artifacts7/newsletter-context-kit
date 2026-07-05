@@ -22,13 +22,13 @@ So that, in the end, you get back the context your AI agents need to start helpi
 
 **Easiest — paste the link.** Drop this into Claude Code and say *"set up my newsletter"*:
 ```
-https://github.com/Artifacts7/context-kit
+https://github.com/Artifacts7/newsletter-context-kit
 ```
 Claude reads the repo and walks you through it — no install, no setup. Perfect to try it.
 
 **For regular use — install the plugin** (namespaced commands + a session-end nudge). Two commands, run **one at a time**:
 ```
-/plugin marketplace add https://github.com/Artifacts7/context-kit.git
+/plugin marketplace add https://github.com/Artifacts7/newsletter-context-kit.git
 ```
 ```
 /plugin install context-kit@context-kit

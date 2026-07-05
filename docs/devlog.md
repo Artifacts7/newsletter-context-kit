@@ -21,7 +21,7 @@ _Dated progress. Raw material for build-in-public posts. Newest first._
 - Added **`/start`** (D26) — one orchestrator that walks Phase A → M1 → M2, conducts describe inline, pauses at the gates. Now **13 skills**.
 - **v0.2 defaults (D27):** default to **25 recent issues** (ask before full), **match the newsletter's language** in conversation + deliverables, and **state the plan + deliverables upfront** before running.
 - For fast local iteration: symlinked the skills into `~/.claude/skills/` (bare-name invocation, no marketplace/trust prompt). For the authentic new-user test: remove the symlinks and install the plugin from GitHub.
-- Pushed all of the above to https://github.com/Artifacts7/context-kit (clean Artifacts7 attribution).
+- Pushed all of the above to https://github.com/Artifacts7/newsletter-context-kit (clean Artifacts7 attribution).
 
 ## 2026-06-30 — Day 4: packaged as a plug-and-play Claude Code plugin (D25)
 
